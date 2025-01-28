@@ -29,13 +29,13 @@ Um **proxy** é um intermediário entre um cliente e um servidor que redireciona
 
 ## Instalação
 
-1. Clone o repositório:
+1. Clone o repositório por ssh:
    ```bash
-   git clone https://github.com/seuusuario/proxy-tool.git
+   git clone git@github.com:Arthurlevicoelho/proxy_tcp.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
-   cd proxy-tool
+   cd proxy_tcp
    ```
 3. Torne o script executável:
    ```bash
