@@ -2,6 +2,20 @@
 
 Este projeto é uma ferramenta proxy baseada em Python, projetada para interceptar e modificar o tráfego entre um cliente local e um servidor remoto. Ela permite aos usuários analisar, manipular e encaminhar pacotes de rede para testes e depuração.
 
+## O que é um Proxy?
+
+Um **proxy** é um intermediário entre um cliente e um servidor que redireciona e gerencia o tráfego entre os dois. Ele atua como um ponto de acesso para enviar e receber informações, podendo interceptar, inspecionar, modificar e registrar o tráfego de rede. 
+
+### Serventia de um Proxy:
+
+- **Segurança**: Proxies podem ser usados para proteger redes privadas, mascarar endereços IP e prevenir acesso não autorizado.
+- **Testes e Depuração**: Auxiliam desenvolvedores e analistas a monitorar e manipular tráfego de rede para identificar problemas ou comportamentos inesperados.
+- **Controle de Acesso**: Podem bloquear ou permitir determinados tipos de tráfego com base em regras pré-configuradas.
+- **Cache**: Melhoram a performance ao armazenar em cache respostas frequentes do servidor para uso futuro.
+- **Análise de Dados**: Facilitam a coleta e inspeção de informações para diagnósticos ou auditorias.
+
+## Funcionalidades
+
 ## Funcionalidades
 
 - **Intercepção de Pacotes**: Captura o tráfego de um cliente para um servidor e vice-versa.
@@ -95,25 +109,6 @@ def server_loop(local_host, local_port, remote_host, remote_port, receive_first)
     # Detalhes da implementação...
 ```
 
-## Problemas Conhecidos
-
-- Certifique-se de que as portas que você está vinculando não estejam já em uso.
-- Pode ser necessário ter permissões para vincular a determinadas portas.
-- A função `hexdump` possui um erro de digitação (`translete` deve ser `translate`). Corrija isso para um funcionamento adequado.
-
-## Contribuição
-
-Contribuições são bem-vindas! Se você encontrar algum problema ou tiver ideias para melhorias, fique à vontade para abrir uma issue ou enviar um pull request.
-
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
-
-## Autor
-
-[Seu Nome](https://github.com/seuusuario)
-
----
-
-Fique à vontade para personalizar as funções `request_handler` e `response_handler` conforme a sua necessidade!
-
